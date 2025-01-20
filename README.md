@@ -10,6 +10,7 @@
   },
   "allowsBounceVertical":"NO" //记得将页面拖动设置为NO
 ```
+在编辑器详情，小程序配置中勾上启用component2。
 ## page.axml
 
 ``` html
