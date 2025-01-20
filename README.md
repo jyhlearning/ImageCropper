@@ -16,6 +16,16 @@
 <image-cropper a:if="{{true}}}" imgSrc="{{src}}" ref="imagecropper" id="image-cropper" limit_move="{{true}}" disable_rotate="{{true}}" width="{{width}}" height="{{height}}" onLoadimage="loadimage" onConfirm="handleCut" onCancle="handleCancle"></image-cropper>
 ```
 
+注意 src路径参考 [getimageinfo](https://opendocs.alipay.com/mini/api/media/image/my.getimageinfo)的路径，绝对路径无效，支持网络地址、[本地临时文件](https://opendocs.alipay.com/mini/03dt4s#%E6%9C%AC%E5%9C%B0%E4%B8%B4%E6%97%B6%E6%96%87%E4%BB%B6)、[本地缓存文件](https://opendocs.alipay.com/mini/03dt4s#%E6%9C%AC%E5%9C%B0%E7%BC%93%E5%AD%98%E6%96%87%E4%BB%B6)、[本地用户文件](https://opendocs.alipay.com/mini/03dt4s#%E6%9C%AC%E5%9C%B0%E7%94%A8%E6%88%B7%E6%96%87%E4%BB%B6)、[代码包文件](https://opendocs.alipay.com/mini/03dt4s#%E4%BB%A3%E7%A0%81%E5%8C%85%E6%96%87%E4%BB%B6)。
+也可以使用相对路径，需在 mini.project.json 中配置可读取的小程序文件,`src="image/1.jpg"`。
+```
+// mini.project.json 配置示例，下例中 source 为根目录（app.json 所在目录）下的文件夹，* 代表任意文件名。
+{
+  "assetsInclude": ["image/*.jpg"]
+}
+```
+
+
 ## page.js
 ```js
 data{
@@ -87,6 +97,6 @@ url的使用参考[文件系统](https://opendocs.alipay.com/mini/03dof7?pathHas
 ## 说明
 以上配置项用于自定义图片裁剪组件的行为和外观。开发者可以根据需求调整这些选项以实现特定的功能。
 
-本项目来修改自![alipaycrop]https://github.com/YYBT/alipaycrop 由于原组件在使用过程中存在一些问题，所以进行部分修改，支付宝端运行良好，事件原因，微信尚未测试（大概率运行不了，有些函数支付宝和微信不一样）。
+本项目来修改自![alipaycrop]https://github.com/YYBT/alipaycrop 由于原组件在使用过程中存在无法导出图片问题，所以进行了修改，并且根据自己的需要添加并修改了部分交互逻辑，如裁剪框横向纵向拖动，确认返回交互等，支付宝端运行良好，微信尚未测试。
 
 
