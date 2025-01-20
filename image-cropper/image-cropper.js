@@ -1,13 +1,24 @@
 Component({
   props: {
+    /**
+     * 组件加载
+     */
     onCropperload: null,
+    /**
+     * 图片加载
+     */
     onLoadimage: null,
-    onClickcut: null,
-
+    //onClickcut: null,
+    /**
+     * 确认操作
+     */
     onConfirm:null,
+    /**
+     * 取消
+     */
     onCancle:null,
     /**
-     * 图片路径
+     * 裁剪图片路径
      */
     imgSrc: "",
     /**
