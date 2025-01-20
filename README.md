@@ -98,6 +98,6 @@ url的使用参考[文件系统](https://opendocs.alipay.com/mini/03dof7?pathHas
 ## 说明
 以上配置项用于自定义图片裁剪组件的行为和外观。开发者可以根据需求调整这些选项以实现特定的功能。
 
-本项目来修改自![alipaycrop]https://github.com/YYBT/alipaycrop 由于原组件在使用过程中存在无法导出图片问题，所以进行了修改，并且根据自己的需要添加并修改了部分交互逻辑，如裁剪框横向纵向拖动，确认返回交互等，支付宝端运行良好，微信尚未测试。
+本项目来修改自[image-cropper](https://github.com/1977474741/image-cropper?tab=readme-ov-file),[alipaycrop]https://github.com/YYBT/alipaycrop 由于原组件在使用过程中存在无法导出图片问题，所以进行了修改，并且根据自己的需要添加并修改了部分交互逻辑，如裁剪框横向纵向拖动，确认返回交互等，支付宝端运行良好，微信尚未测试。
 
 
