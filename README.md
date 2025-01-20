@@ -1,5 +1,5 @@
 # 效果
-![](images\image.png)
+![](images/image.png)
 
 # 使用
 
